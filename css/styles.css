@@ -624,6 +624,7 @@ img {
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	background-color: transparent;
 	outline: transparent;
+	padding-left: 38px;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -641,6 +642,7 @@ img {
 
 .modal-input:focus + .modal-icon {
 	stroke: #4d5ae5;
+	fill: #4d5ae5;
 }
 
 .modal-text {
@@ -674,8 +676,20 @@ img {
 	display: flex;
 	align-items: center;
 	position: relative;
-	padding-top: 8px;
-	padding-bottom: 24px;
+	/* padding-top: 8px;
+	padding-bottom: 24px; */
+}
+
+.check-text span {
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	border: 1px solid rgba(17, 17, 17, 0.14);
+	margin-right: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: transparent;
 }
 
 .check-text a {
@@ -683,23 +697,32 @@ img {
 	text-decoration: underline;
 }
 
-/* .check-text span {
-  width: 20px;
-  height: 20px;
-  border-radius: 6px;
-  border: 1px solid rgba(17, 17, 17, 0.14);
-  margin-right: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
+.check-input span {
+	width: 16px;
+	height: 16px;
+	align-items: center;
+	justify-content: center;
+	fill: transparent;
+	margin-right: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: transparent;
 }
 
 .check-input:checked + .check-text span {
-  background-color: #fd9222;
-  border: none;
-  fill: #ffffff;
-} */
+	background-color: #404bbf;
+	border: none;
+	fill: #c10606;
+}
+
+.check-input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: transparent;
+	margin-right: 8px;
+}
 
 .button-send {
 	color: #ffffff;
